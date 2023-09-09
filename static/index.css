@@ -1,0 +1,29 @@
+/* a style sheet is a list of css RULE or set of rules used to style a html page
+terminologies
+.selectors =  these are the things we want to style i.e we want to target e.g div, h1, etc
+curly braces
+declaration property and value pairs
+semi-colon at the end of every declaration ---basically a delimiter*/
+
+h1{
+    color:rgb(185, 176, 176); /*this means that all text in <h1> will be the indicated color */
+    font-family:'Brush Script MT', cursive;
+    background-color: bisque;
+    text-decoration: underline;
+    font-size:  50px;
+    text-align: center;
+    border:  solid;/*format for border = width, style and color*/
+    /* text-transform: uppercase; */
+}
+
+p{
+    color:#093; 
+    font-family:'Brush Script MT', cursive;
+    column-count: 3 /*this helps seperate the page into columns */;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style-type: square;
+}
