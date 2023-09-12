@@ -19,11 +19,17 @@ h1{
 p{
     color:#093; 
     font-family:'Brush Script MT', cursive;
-    column-count: 3 /*this helps seperate the page into columns */;
+    font-size: 20px;
+    column-count: 2 /*this helps seperate the page into columns */;
 }
 a{
     text-decoration: none;
 }
 li{
     list-style-type: square;
+}
+
+.title{
+    font-family: 'Brush Script MT', cursive;
+    color: #000000;
 }
