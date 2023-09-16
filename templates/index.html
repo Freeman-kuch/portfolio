@@ -11,70 +11,73 @@
 </head>
 <body>
     <!-- this contains all the visual content i.e Heading, image, paragraphs etc -->
-    <div class="Heading">
-        <h1><strong>.py</strong> Portfolio Page</h1>
-    </div>
-    <hr>
-    <div>
-        <a href="https://www.github.com/freeman-kuch" target="_blank"> Github profile</a>
-    </div>
-    <!-- DIV tag is basically used to divide content into sections for easy identificaiton -->
-    <div>
-        <ul>
-            <li>software <em>Engineer</em></li>
-            <li>Backend  <em>Developer</em></li>
-            <li>RPA <em>Developer</em>   </li>
-            <li>CUX <strong>Developer</strong></li>
-            <li><em>AWS</em> Cloud <strong>Developer</strong></li>
-        </ul>
-        <!-- this hr tag means horizontal rule, while for a line breaker i.e means newline, it is a <br> tag  -->
+    <header>   <h1><strong>.py</strong> Portfolio Page</h1> 
+        <img src="../static/danielle-suijkerbuijk-D2dnbomKWPw-unsplash.jpg" alt="this was gotten from unsplash.com" width="200" height="200">
         <hr>
-        <dl>
-            <dt>software Engineer</dt>
-            <dd>A software Engineer is someone who develops and maintains softwares</dd>
-            <dt>CUX Developer</dt>
-            <dd>A CUX designer designs a conversational robot and develops the conversatoin between robot and the user </dd>
-        </dl>
-    </div>
-    <div>
-        <p>Yo guys welcome to .py's Page for the first<a href="https://cypto-currency.vercel.app/"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, corrupti rem? Quia animi aspernatur ipsa architecto exercitationem, reiciendis maxime laudantium, facilis deserunt quibusdam dolore, non ipsum eligendi officiis provident necessitatibus.webpage</a> </p>
-    </div>
-    <div>
-        <form action="{{url_for('something from the flask app')}}" method="post">
-            <label for="phone-number">phone number:</label>
-            <input type="integer" name="phone-number" id="phone-number" name="phone-number" placeholder="phone-number">
-            <br> <br> <br> 
-            <label for="email">Enter Email:</label>
-            <input type="email" name="email" id="email" name="email" placeholder="email">
-        </form>
-    </div>
-    <div>
-        <p> What is your Gender?</p>
-        <form action="">
-            <input type="radio" name="Gender" value="male" id="Male">
-            <label for="Male">Male </label>
-            <input type="radio" name="Gender" value="Female" id="Female">
-            <label for="Female">Female </label>
-            <!-- name attribute is needed in the grouping of forms in radio forms so you don't check the multiple boxes 
-            radio forms help to streamline user response so they do not write jagon in the input field-->
-        </form>
-    </div>
-    <div>
-        <label for="testing"></label>
-        <select name="testing select tag" id="testing">
-            <option value="q1"> are you a boy?</option>
-            <option value="q2"> are you gay?</option>
-        </select>
-    </div>
-    <div>
-        <label for="somethingg:">somethingg:</label>
-        <br>
-        <textarea name="somethingg" id="somethingg" cols="30" rows="10" placeholder="enter soeth"></textarea>
-        <br><br> 
-        <input type="submit" value="submit the somethingg">
-    </div>
-    <img src="../static/danielle-suijkerbuijk-D2dnbomKWPw-unsplash.jpg" alt="this was gotten from unsplash.com" width="200" height="200">
-    <blockquote cite="https://www.unizik.com">Those who fail to plan, plan to Fail</blockquote>
+        <nav>
+            <ul>
+                <li>software <em>Engineer</em></li>
+                <li>Backend  <em>Developer</em></li>
+                <li>RPA <em>Developer</em>   </li>
+                <li>CUX <strong>Developer</strong></li>
+                <li><em>AWS</em> Cloud <strong>Developer</strong></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- DIV tag is basically used to divide content into sections for easy identificaiton -->
+        <div>
+            <!-- this hr tag means horizontal rule, while for a line breaker i.e means newline, it is a <br> tag  -->
+            <hr>
+            <dl>
+                <dt>software Engineer</dt>
+                <dd>A software Engineer is someone who develops and maintains softwares</dd>
+                <dt>CUX Developer</dt>
+                <dd>A CUX designer designs a conversational robot and develops the conversatoin between robot and the user </dd>
+            </dl>
+        </div>
+        <div>
+            <p>Yo guys welcome to .py's Page for the first<a href="https://cypto-currency.vercel.app/"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, corrupti rem? Quia animi aspernatur ipsa architecto exercitationem, reiciendis maxime laudantium, facilis deserunt quibusdam dolore, non ipsum eligendi officiis provident necessitatibus.webpage</a> </p>
+        </div>
+        <div>
+            <form action="/person_info" method="post">
+                <label for="phone-number">phone number:</label>
+                <input type="integer" name="phone-number" id="phone-number" name="phone-number" placeholder="phone-number">
+                <br> <br> <br> 
+                <label for="email">Enter Email:</label>
+                <input type="email" name="email" id="email" name="email" placeholder="email">
+            </form>
+        </div>
+        <div>
+            <p> What is your Gender?</p>
+            <form action="/person_info" method="post">
+                <input type="radio" name="Gender" value="male" id="Male">
+                <label for="Male">Male </label>
+                <input type="radio" name="Gender" value="Female" id="Female">
+                <label for="Female">Female </label>
+                <!-- name attribute is needed in the grouping of forms in radio forms so you don't check the multiple boxes 
+                radio forms help to streamline user response so they do not write jagon in the input field-->
+            </form>
+        </div>
+        <div>
+            <label for="testing"></label>
+            <select name="testing select tag" id="testing">
+                <option value="q1"> are you a boy?</option>
+                <option value="q2"> are you a lady?</option>
+            </select>
+        </div>
+        <div>
+            <label for="somethingg:">somethingg:</label>
+            <br>
+            <textarea name="somethingg" id="somethingg" cols="30" rows="10" placeholder="enter soeth"></textarea>
+            <br><br> 
+            <input type="submit" value="submit the somethingg">
+        </div>
+    </main>
+    <footer>
+        <a href="https://www.github.com/freeman-kuch" target="_blank"> Github profile</a>
+         <blockquote cite="https://www.unizik.com">Those who fail to plan, plan to Fail</blockquote>
+    </footer>
     <!-- sometimes Good practices might say it is good to put javascripts at the end of the body tag, but this is arguable -->
     
     <!-- when a form is submitted the value is taken in to the value of the action attribute of the form tag and can be used as a reference in the backend -->
